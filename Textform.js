@@ -40,7 +40,7 @@ export default function Textform(props) {
  <button className="btn btn-primary " onClick={UpClick}>To Uppercase</button>
  <button className="btn btn-primary mx-4" onClick={LowClick}>To Lowercase</button>
  <button className="btn btn-primary mx-4" onClick={ClrClick}>Clear Text</button>
- <button className="btn btn-primary mx-4" onClick={NoVowels}>Vowel Count</button>
+//  <button className="btn btn-primary mx-4" onClick={NoVowels}>Vowel Count</button>
 </div>
 <div className="container my-4 ">
   <h2>Your Text Summary</h2>

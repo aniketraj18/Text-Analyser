@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Navbar(props) {
   return (
-    <nav class="navbar navbar-expand-lg bg-danger">
+    <nav class={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
     <div class="container-fluid">
       <b className="navbar-brand" href="/">{props.title}</b>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,8 +35,13 @@ export default function Navbar(props) {
           <input className="form-control me-2" type="search" placeholder="Search here" aria-label="Search"/>
           <button className="btn btn-outline-light" type="submit">Search</button>
         </form> */}
+        <div class={`form-check form-switch text-${props.mode==='light'?'dark':'light'}`}>
+  <input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
+  <label className="form-check-label " htmlfor="flexSwitchCheckDefault">Dark Mode</label>
+</div>
       </div>
     </div>
   </nav>
   )
 }
+

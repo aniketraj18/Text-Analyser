@@ -32,17 +32,17 @@ export default function Textform(props) {
     const[text,setText]=useState("");
   return (
     <>
-    <div className="container my-2">
+    <div className="container my-2" style={{color: props.mode==='dark'?'white':'black'}}>
         <h2>{props.heading}</h2>
  <div className="mb-3">
-  <textarea className="form-control" value={text} onChange={handleOnChange} id="myBox" rows="8"></textarea>
+  <textarea className="form-control" value={text} onChange={handleOnChange} style={{backgroundColor: props.mode==='dark'?'#3b506e':'white',color:props.mode==='dark'?'white':'black'}} id="myBox" rows="8"></textarea>
  </div>
  <button className="btn btn-primary " onClick={UpClick}>To Uppercase</button>
  <button className="btn btn-primary mx-4" onClick={LowClick}>To Lowercase</button>
  <button className="btn btn-primary mx-4" onClick={ClrClick}>Clear Text</button>
-//  <button className="btn btn-primary mx-4" onClick={NoVowels}>Vowel Count</button>
+ {/* <button className="btn btn-primary mx-4" onClick={NoVowels}>Vowel Count</button> */}
 </div>
-<div className="container my-4 ">
+<div className="container my-4 " style={{color: props.mode==='dark'?'white':'black'}}>
   <h2>Your Text Summary</h2>
   <p><b>{text.split(" ").length} words , {text.length} characters</b></p>
   <p><b>{0.008*text.split(" ").length} minutes to read </b></p>

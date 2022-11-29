@@ -21,7 +21,7 @@ document.title='TextUtils-Light Mode';}
 
  }
   return (
-    <><Navbar title="Word Analyser" mode={mode} toggleMode={toggleMode}/>
+    <><Navbar title="Text Analyser" mode={mode} toggleMode={toggleMode}/>
     <Alert alert="This is alert!"/>
     <div className="container"><Textform heading="Enter Your Text"  mode={mode}/></div>
     <div>

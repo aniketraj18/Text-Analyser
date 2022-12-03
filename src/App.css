@@ -36,6 +36,12 @@
     transform: rotate(360deg);
   }
 }
-.blanks{
+.blanks {
   color: rgb(239, 28, 56);
+}
+footer {
+  text-align: center;
+  color: #ccc;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
